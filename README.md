@@ -164,3 +164,39 @@ Replace `YOUR_API_KEY_HERE` with exactly the same value you configured via `.env
 - **`app/config.py`**: environment config helpers (keys, thresholds, timeouts).
 
 ---
+
+## Deployment to Render
+
+This project is configured for easy deployment to Render. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
+### Quick Start
+
+1. **Push to GitHub**
+   ```powershell
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin main
+   ```
+
+2. **Deploy on Render**
+   - Go to https://dashboard.render.com
+   - Click "New +" → "Blueprint"
+   - Connect your GitHub repository
+   - Render will auto-detect `render.yaml` and configure everything
+
+3. **Set Environment Variables**
+   - In Render dashboard → Environment, add:
+     - `API_KEY`: Your secret API key (required)
+     - `OPENAI_API_KEY`: Optional, for LLM features
+
+4. **Your service will be live at**: `https://your-service-name.onrender.com`
+
+### Testing Your Live Service
+
+- Health check: `https://your-service-name.onrender.com/health`
+- API docs: `https://your-service-name.onrender.com/docs`
+- Webhook endpoint: `https://your-service-name.onrender.com/webhook`
+
+**Note**: Free tier services may spin down after inactivity. First request after spin-down may take 30-60 seconds.
+
+---
