@@ -182,7 +182,7 @@ TTL cleanup and deduplication
 
 ## Design Goals
 
-Minimal, fast, and webhook-friendly
+Minimal, fast, and webhook-friendly.
 
 Safe, controlled scammer engagement
 
