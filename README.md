@@ -4,7 +4,10 @@
 Agentic Honey-Pot is a lightweight FastAPI service designed for scam detection, autonomous engagement, and intelligence extraction.
 It simulates a responsive victim persona that detects scam intent, adapts its behavior across conversation phases, and harvests actionable scammer intelligence over multiple turns.
 
-The system is built to operate as a webhook-driven service that can be embedded into messaging platforms, moderation pipelines, or fraud-analysis workflows.
+The system operates as a webhook-driven API that can be embedded into messaging platforms, moderation pipelines, or fraud-analysis workflows.
+
+A live deployment with interactive API documentation is available here:
+👉 https://intelligence-extraction.onrender.com/docs
 
 ## Core Capabilities
 ### 1. Scam Detection
